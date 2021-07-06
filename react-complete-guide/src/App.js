@@ -23,11 +23,10 @@ const INITIAL_EXPENSES = [
   },
 ];
 function App() {
-  console.log(INITIAL_EXPENSES);
+
  const [expenses, setExpenses] = useState(INITIAL_EXPENSES);
   const addExpenses =(expenseData)=>{
-    console.log(expenseData);
-    setExpenses([expenseData, ...expenses]);
+      setExpenses([expenseData, ...expenses]);
   }
   return (
     <div>
